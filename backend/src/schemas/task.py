@@ -11,6 +11,7 @@ class TaskPriority(str, Enum):
     LOW = "low"
     MEDIUM = "medium"
     HIGH = "high"
+    URGENT = "urgent"
 
 # Esquema para crear una tarea
 class TaskCreate(BaseModel):

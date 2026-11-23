@@ -2,7 +2,7 @@ from fastapi import APIRouter, status
 from src.schemas.task import TaskCreate, TaskResponse
 from src.services import task_service
 
-router = APIRouter(prefix="/tasks", tags=["Tasks"])
+router = APIRouter(prefix="/api/tasks", tags=["Tasks"])
 
 @router.get("/", response_model=list[TaskResponse])
 def list_tasks():
